@@ -1,0 +1,420 @@
+
+
+
+
+<body>
+
+
+  <!-- Navigation Bar -->
+ <app-navbar></app-navbar>
+
+   <!-- Profile Section with Cover Image -->
+   <div class="cover-image" >
+    
+        <!-- "Change Cover Picture" button -->
+    <div class="change-cover-btn mt-5">
+      <i class="fas fa-camera"></i> Change Cover Picture
+    </div>
+  </div>
+
+  <!-- Content below the cover image -->
+ 
+  
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Left Section -->
+
+          <div class="col-md-3 bg-light ">
+
+            <div class="card avatar-card">
+              <div class="image-container position-relative">
+                <i class="fas fa-camera position-absolute top-50 start-50 translate-middle" style="border: 1px solid rgb(245, 78, 78); 
+                padding: 6px; border-radius:50%; background-color:rgb(245, 78, 78); color:white;"></i>
+<img [src]="'http://localhost:5293/api/Files/' + sShared.profileSearch.profilePictureName" alt="Avatar" class="card-img-top avatar-img">
+</div>
+            <div class="card-body">
+                  <div class="d-flex justify-content-between mb-3">
+                    <div>
+                      <p>Following</p>
+                      <p>34</p>
+                    </div>
+                    <div>
+                      <p>Followers</p>
+                      <p>155</p>
+                    </div>
+                   </div>
+                   <hr style="margin-top: 10px; margin-bottom: 10px;"> <!-- Horizontal line -->
+                   <div class="d-flex justify-content-between" style="margin-top: 10px;"> <!-- Adjusted margin -->
+                       <div>
+                        <i class="bi bi-facebook"></i> <!-- Facebook Icon -->
+                           <a href="https://www.facebook.com">Facebook</a> <!-- Facebook Link -->
+                       </div>
+                       <!-- Add similar code for other social media handles -->
+                   </div>
+                   <hr style="margin-top: 10px; margin-bottom: 10px;"> <!-- Horizontal line -->
+                   
+                   <!-- YouTube Section -->
+                  <div class="d-flex justify-content-between" style="margin-top: 10px;">
+                    <div>
+                        <i class="bi bi-youtube"></i>
+                      <a href="https://www.youtube.com">Youtube</a>
+                    </div>
+                  </div>
+      <hr style="margin-top: 10px; margin-bottom: 10px;">
+
+                   <!-- Twitter Section -->
+                  <div class="d-flex justify-content-between" style="margin-top: 10px;">
+                    <div>
+                        <i class="bi bi-twitter-x"></i>
+                      <a href="https://www.twitter.com">Twitter</a>
+                    </div>
+                  </div>
+      <hr style="margin-top: 10px; margin-bottom: 10px;">
+      <!-- Instagram Section -->
+      <div class="d-flex justify-content-between" style="margin-top: 10px;">
+          <div>
+            <i class="bi bi-instagram"  style="color:#9214e6;"></i>
+              
+              <a href="https://www.instagram.com">Instagram</a>
+          </div>
+      </div>
+      <hr style="margin-top: 10px; margin-bottom: 10px;">
+      <!-- LinkedIn Section -->
+      <div class="d-flex justify-content-between" style="margin-top: 10px;">
+          <div>
+            <i class="bi bi-linkedin"></i>
+              <a href="https://www.linkedin.com">LinkedIn</a>
+          </div>
+      </div>
+      <hr style="margin-top: 10px; margin-bottom: 10px;">
+      <!-- GitHub Section -->
+      <div class="d-flex justify-content-between" style="margin-top: 10px;">
+          <div>
+            <i class="bi bi-github"></i>
+              <a href="https://www.github.com">GitHub</a>
+          </div>
+      </div>
+      <hr style="margin-top: 10px; margin-bottom: 10px;">
+  
+               </div>
+                
+              </div>
+
+
+             
+          </div>
+
+      
+
+          
+          
+      
+          <!-- Center Section -->
+          <div class="col-md-6 bg-light ">
+            <!-- Left Section -->
+
+    <h5 class="mt-3" >{{sShared.profileSearch.firstName + " "+ sShared.profileSearch.surname}}</h5>
+    <div class="mt-">
+    <p class="mb-2 d-inline">oyibp</p>
+  <!-- Star Rating -->
+  <div class="rating d-inline ml-2">
+    <i class="fas fa-star" style="color: rgb(158, 231, 74);"></i>
+    <i class="fas fa-star" style="color: rgb(158, 231, 74);"></i>
+    <i class="fas fa-star" style="color: rgb(158, 231, 74);"></i>
+    <i class="fas fa-star" style="color: rgb(158, 231, 74);"></i>
+    <i class="far fa-star" style="color: rgb(158, 231, 74);"></i>
+  </div>
+    <!-- Link Status -->
+    <p class="link-status d-inline ml-2">
+      <a href="#">Status</a>
+    </p>
+</div>
+<!-- Icons and Text -->
+<div class="d-flex mt-4">
+    <div class="text-center mr-5">
+      <i class="fas fa-feed fa-2x d-block" id="icon-color" ></i>
+      <p class="d-inline-block" id="icon-color">Feed</p>
+    </div>
+  
+    <div class="text-center mr-5">
+      <i class="fas fa-info-circle fa-2x d-block" id="icon-color-info"></i>
+      <p class="d-inline-block" id="icon-color-info">Info</p>
+    </div>
+  
+    <div class="text-center mr-5">
+      <i class="fas fa-bookmark fa-2x d-block" id="icon-color"></i>
+      <p class="d-inline-block" id="icon-color">Jobs</p>
+    </div>
+  
+    <div class="text-center mr-5">
+      <i class="fas fa-square-check fa-2x d-block" id="icon-color"></i>
+      <p class="d-inline-block" id="icon-color">Bids</p>
+    </div>
+  
+    <div class="text-center mr-5">
+      <i class="fas fa-puzzle-piece fa-2x d-block" id="icon-color"></i>
+      <p class="d-inline-block" id="icon-color">Portfolio</p>
+    </div>
+  
+    <div class="text-center mr-5">
+      <i class="fas fa-sun fa-2x d-block" id="icon-color"></i>
+      <p class="d-inline-block" id="icon-color">Reviews</p>
+    </div>
+  
+    <div class="text-center">
+      <i class="fas fa-wallet fa-2x d-block" id="icon-color"></i>
+      <p class="d-inline-block" id="icon-color">Payment</p>
+    </div>
+  </div>
+  
+
+  
+  
+
+
+         <!-- Post Section (Sample Post) -->
+         
+  
+         <div *ngFor="let post of emailS.postInfoData">
+            <div class="card mt-3">
+                <div class="card-body">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <!-- Avatar on the left -->
+                        <img src="{{baseUrl+post.profilePictureName}}" alt="User Avatar" class="img-fluid rounded-circle mr-3" style="width: 50px; height: 50px;">
+            
+                        <!-- User details -->
+                        <div class="flex-grow-1 d-flex flex-column">
+                            <!-- Name -->
+                            <div class="ms-3">
+                            <h6 class="mb-0">{{post.firstName}}   {{post.surname}}</h6>
+                            </div>
+            
+                            <!-- Timer icon below the name -->
+                            <div class="text-muted ms-3 mt-1">
+                              <span class="material-icons text-dark clock">
+                                  schedule
+                              </span>{{post.postDate | date:'shortTime'}}
+                            </div>
+                        </div>
+            
+                        <!-- Vertical three dots on the right -->
+                        <div class="ml-auto">
+                            <span>&#8942;</span>
+                        </div>
+                    </div>
+            
+                    <!-- User interests and location -->
+                    <div class="d-flex align-items-center mb-2">
+                      <!-- User interest icon and text -->
+                      <div class="me-2 mt-2">
+                          <span class="material-icons text-danger">
+                              school
+                              </span>
+                      </div>
+                      <div class="ms-2 me-3">
+                          <p class="mb-0">Epic Developer</p>
+                      </div>
+                  
+                      <!-- Location icon and text -->
+                      <div class=" me-1 mt-2">
+                          <span class="material-icons text-success">
+                              location_on
+                              </span>
+                      </div>
+                      <div>
+                          <p class="mb-0 ms-1">Ghana</p>
+                      </div>
+                  
+                      <!-- Favourite and message icons on the right -->
+                      <div class="ms-auto">
+                          <div class="mr-3 ">
+                              <span  class="me-1" style="border:  #13a550 solid 10px; background:#13a550; border-radius:3px;">
+                                  <span class="material-icons text-white" style="width: 18px; height: 16px;">
+                                      bookmark
+                                      </span>
+            
+                                  </span>
+            
+                              <span style="border: #3e7df3 solid 10px; background:#3e7df3; border-radius:3px;" (click)="goToMessage(post.email)">
+                                  <span class="material-icons text-white mail" style="width: 18px; height: 16px;">
+                                      mail
+                                      </span>
+            
+                                  </span>
+                              
+                             
+                          </div>
+                      </div>
+                  </div>
+            
+                  <div>
+                    
+                    <h5>
+                      {{post.programme}}
+                    </h5>
+                  </div>
+                  <div class="ml-auto">
+                    <span class="bg-success text-white p-2">Full Time</span>
+                    <!-- Price per hour -->
+                    <span class="ms-2 ">$30/hr</span>
+                </div>
+                <br>
+                
+                <div [innerHTML]="post.content" *ngIf="post.text">
+                  <!-- User's dynamic content -->
+                 
+                
+                  <!-- "Read More" link -->
+                  <a href="#" class="text-primary" id="readMoreLink" role="button" onclick="toggleText()">
+                    Read More
+                  </a>
+                 
+                </div>
+            
+                 
+                <div  *ngIf="post.video">
+                  <!-- User's dynamic content -->
+                 
+                  <p *ngIf="post.content">
+                    {{post.content}}
+                  </p>
+                <video src="{{postUrl+post.fileName}}"></video>
+                <br>
+                  <!-- "Read More" link -->
+                  <a href="#" class="text-primary" id="readMoreLink" role="button" onclick="toggleText()">
+                    Read More
+                  </a>
+                 
+                </div>
+            
+                 
+                <div  *ngIf="post.image">
+                  <!-- User's dynamic content -->
+            
+                  <p *ngIf="post.content">
+                    {{post.content}}
+                  </p>
+                 <img src="{{postUrl+post.fileName}}" alt="not found" width="500" height="400">
+                 <br>
+                
+                  <!-- "Read More" link -->
+                  <a href="#" class="text-primary" id="readMoreLink" role="button" onclick="toggleText()">
+                    Read More
+                  </a>
+                 
+                </div>
+            
+                <div class="mb-3" style="margin-top:8px;">
+                  
+                  <span class="bg-secondary rounded-pill p-1" style="border-radius: 12px;">HTML</span>
+                  <span class="badge badge-secondary rounded-pill p-2" style="border-radius: 12px;">Python</span>
+                  <span class="badge badge-secondary rounded-pill p-2" style="border-radius: 12px;">C++</span>
+                  <span class="badge badge-secondary rounded-pill p-2" style="border-radius: 12px;">JavaScript</span>
+                </div>
+                <hr>
+                <div class="d-flex align-items-center justify-content-between">
+                  <!-- Like Section -->
+                  <div class="d-flex align-items-center">
+                      <span class="material-icons me-2 text-danger love " (click)="like(post.i,post.id,post.userId)">
+                          favorite
+                          </span>
+                    <span class="me-3" (click)="like(post.i,post.id,post.userId)">Like</span>
+                    <div class="rounded-circle bg-secondary text-white px-2">{{post.likes}}</div>
+                  </div>
+                
+            
+            <!-- Comment Section -->
+            
+              <div class="d-flex align-items-center">
+                  <span class="material-icons me-2 comment text-primary " (click)="displayCommentInputFied(post.i)" (dblclick)="dontDisplayComment(post.i)">
+                      chat
+                      </span>
+                <span class="me-3 com"  (click)="dontShow(post.i)">Comment</span>
+                <div class="rounded-circle bg-secondary text-white px-2 count"  (click)="getStudentAndComment(post.id,post.i)" (dblclick)="dontShow(post.i)">{{post.count}}</div>
+              </div>
+            
+            
+                
+                  <!-- View Section -->
+                  <div class="d-flex align-items-center">
+                      <!-- <span class="material-icons visibility text-primary">
+                          visibility
+                          </span>
+                    <span>View</span>
+                    <div class="rounded-circle bg-secondary text-white px-2">90</div> -->
+                  </div>
+                </div>
+                </div>
+             <!-- Comment Collapse -->
+             <div class="mt-3" id="commentCollapse" *ngIf="post.d">
+              <div class="card card-body">
+                <!-- Comment Form -->
+                <form id="commentForm" class="mb-2">
+                  <div class="form-group">
+                    <textarea id="commentInput" class="form-control" rows="2" placeholder="Type your comment..." [(ngModel)]="commentContent" name="comment"></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-sm" (click)="comment(post.id,post.i)">Post</button>
+                </form>
+            
+                <!-- Existing Comments -->
+                <!-- <div id="existingComments" class="existing-comments"> -->
+                  <!-- Comment items go here -->
+                  <!-- <div class="mb-2">User 1: Great post!</div>
+                  <div class="mb-2">User 2: Nice content!</div>
+                  Add more comment items as needed
+                </div> -->
+                </div>
+            </div>
+            
+            <div class="container" *ngIf="post.dc">
+              <div class="card">
+                  <div class="card-body" >
+                    <div class="row" *ngFor="let x of stuCom">
+                     
+                      <div class="col-md-1">
+                        <img src="{{baseUrl+x.profilePictureName}}" class="img-fluid rounded-circle" alt="Avatar">
+                      </div>
+              
+                      <div class="col-md-7">
+                        <p>{{x.firstName}}  {{x.surname}}</p>
+                          <div class="d-flex justify-content-between mt-3">
+                          <p>{{x.content}}  </p> 
+                        </div>
+                  
+                        <div>
+                          <span id="country">{{x.programme}}</span> <!-- Placeholder for country name -->
+                          <span id="datetime"></span> <!-- Placeholder for date and time -->
+                      </div>
+                  </div>
+                    </div>
+                  </div>
+              </div>
+                
+            </div>
+            
+            </div>
+            </div>
+  <!-- Comment Collapse -->
+ 
+
+        <!-- Post Section (Sample Post) -->
+         
+  
+     
+<!-- Comment Collapse -->
+
+
+              
+
+          </div>
+      
+          <!-- Right Section -->
+         
+  
+          </div>
+        </div>
+     
+  

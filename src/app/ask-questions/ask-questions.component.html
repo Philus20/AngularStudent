@@ -1,0 +1,83 @@
+
+
+<div class="container mt-5">
+    <div class="row">
+      <!-- Left Column with a larger width -->
+      <div class="col-lg-8">
+       
+      
+        <!-- Horizontal Line -->
+       
+      
+        <!-- Second Card (Repeat the structure) -->
+        <div class="card">
+          <div class="card-body" >
+            <div class="row" *ngFor="let x of questions">
+              <!-- Left Section (Avatar) -->
+               <div class="col-md-2">
+                <img src="{{baseUrl+x.profilePictureName}}" class="img-fluid rounded-circle" alt="Avatar">
+              </div> 
+      
+              <div class="col-md-7">
+                <p>{{x.content}}</p>
+              
+                <!-- Vote, Comment, and View Icons -->
+                <div class="d-flex justify-content-between mt-3">
+                  <div>
+                    <!-- <i class="fas fa-heart"></i>
+                    <span class="ml-1">Vote</span>
+                    <span class="ml-1">10</span> -->
+                  </div>
+                  <div>
+                    <i class="fas fa-comment"></i>
+                    <span class="ml-1">Comment</span>
+                    <span class="ml-1">5</span>
+                  </div>
+                  <div>
+                    <!-- <i class="fas fa-eye"></i>
+                    <span class="ml-1">View</span>
+                    <span class="ml-1">20</span> -->
+                  </div>
+                </div>
+              
+                      <!-- Buttons -->
+                <div class="mt-3">
+                  <button type="button" class="btn btn-primary">Work</button>
+                  <button type="button" class="btn btn-success ml-2">Php</button>
+                  <button type="button" class="btn btn-info ml-2">Design</button>
+                </div>
+              </div>
+                      
+               
+      
+              <!-- Right Section (Time) -->
+              <div class="col-md-3 text-right">
+                <p>Posted at: 2024-01-30 02:45 PM</p>
+              </div>
+              <hr class="my-3">
+            </div>
+
+            
+          </div>
+        </div>
+
+       
+      </div>
+  
+      <!-- Right Column with a smaller width -->
+      
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="bg-white text-left p-2 font-weight-bold">
+              <!-- Content for the top container -->
+              <textarea name="question" id="" cols="60" rows="10" placeholder="Get solutions to you question here" [(ngModel)]="message"></textarea>
+              <br>
+              <a class="btn btn-primary priamar" (click)="postQuestion()">send question</a>
+            </div>
+          </div>
+        </div>
+      </div>
